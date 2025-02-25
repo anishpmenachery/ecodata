@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Bank GDP Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>World Bank GDP Data</h1>
+        <form id="gdpForm">
+            <label for="countryCode">Country Code:</label>
+            <input type="text" id="countryCode" name="countryCode" placeholder="e.g., US" required>
+            <label for="year">Year:</label>
+            <input type="text" id="year" name="year" placeholder="e.g., 2020" required>
+            <button type="submit">Fetch GDP</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
