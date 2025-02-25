@@ -10,6 +10,7 @@ document.getElementById('gdpForm').addEventListener('submit', function(event) {
         .then(data => {
             if (data[1]) {
                 const gdp = data[1][0].value;
+                const gdpBn = gdp / 1_000_000_000;
                 resultDiv.textContent = `The GDP of ${countryCode} in ${year} was $${gdp.toLocaleString()}`;
             } else {
                 resultDiv.textContent = `No GDP data available for ${countryCode} in ${year}`;
